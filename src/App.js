@@ -1,4 +1,5 @@
 import { Route, Switch, BrowserRouter } from "react-router-dom";
+import MainPage from "./Pages/MainPage";
 import GlobalStyles from "./Styles/GlobalStyles";
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       <BrowserRouter>
         <GlobalStyles />
         <Switch>
-          <Route path="/"/>
+          <Route path="/" exact component={MainPage}/>
         </Switch>
       </BrowserRouter>
   )
